@@ -1,0 +1,400 @@
+@import "../Variable";
+@import "../Mixins";
+
+// @media screen and (min-width: 480px) {}
+
+// @media screen and (min-width: 780px) {}
+
+// @media screen and (min-width: 1024px) {}
+
+@font-face {
+  font-family: Wimpykid;
+  src: url(../../DiaryOfAWimpyKidFontRegular.ttf);
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(../../Montserrat-Regular.ttf);
+}
+
+.searchBar {
+  padding: 0.5rem 0.5rem 1.5rem;
+  // flex-grow: 1;
+  display: flex;
+  align-content: center;
+
+  justify-content: center;
+}
+.searchBar_form {
+  display: flex;
+  min-width: 85vw;
+  max-width: 70vw;
+  margin: 0 auto;
+
+  justify-content: space-between;
+  border: 2px solid $black-color;
+  border-radius: 500px;
+  height: 40px;
+  input {
+    font-size: 1.25rem;
+    color: $black-color;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+}
+.searchBar_text {
+  flex-grow: 1;
+  border: none;
+  margin-right: 0.25rem;
+  background-color: transparent;
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  // width: calc(100%-52px);
+  font-size: 1.25rem;
+  color: black;
+  outline: none;
+}
+.searchBar_button {
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 100%;
+  border: none;
+  background-color: transparent;
+  border-color: azure;
+  margin-right: 7px;
+  color: $black-color;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+.search-gif {
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.category {
+  font-size: $Font-h3;
+  gap: 20px;
+  .cate-link {
+    text-decoration: none;
+    color: $black-color;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .cate-link:hover {
+    color: $blue-color;
+  }
+}
+.product-section {
+  padding: 0 24px;
+  .category {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .product {
+    // position: relative;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  @font-face {
+    font-family: Wimpykid;
+    src: url(../../DiaryOfAWimpyKidFontRegular.ttf);
+  }
+
+  .searchBar {
+    padding: 0.5rem 0.5rem 1.5rem;
+    // flex-grow: 1;
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+  }
+  .searchBar_form {
+    display: flex;
+    min-width: 85vw;
+    max-width: 70vw;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    border: 2px solid $black-color;
+    border-radius: 500px;
+    height: 40px;
+    input {
+      font-size: 1.25rem;
+      color: $black-color;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+  }
+  .searchBar_text {
+    flex-grow: 1;
+    border: none;
+    margin-right: 0.25rem;
+    background-color: transparent;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    // width: calc(100%-52px);
+    font-size: 1.25rem;
+    color: black;
+    outline: none;
+  }
+  .searchBar_button {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    border-color: azure;
+    margin-right: 7px;
+    color: $black-color;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .search-gif {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  .category {
+    font-size: $Font-h2;
+    gap: 20px;
+    .cate-link {
+      text-decoration: none;
+      color: $black-color;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .cate-link:hover {
+      color: $blue-color;
+    }
+  }
+  .product-section {
+    padding: 0 24px;
+    .category {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    .product {
+      // position: relative;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .searchBar {
+    padding: 0.5rem 0.5rem 1.5rem;
+    // flex-grow: 1;
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+  }
+  .searchBar_form {
+    display: flex;
+    min-width: 85vw;
+    max-width: 70vw;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    border: 2px solid $black-color;
+    border-radius: 500px;
+    height: 40px;
+    input {
+      font-size: 1.25rem;
+      color: $black-color;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+  }
+  .searchBar_text {
+    flex-grow: 1;
+    border: none;
+    margin-right: 0.25rem;
+    background-color: transparent;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    // width: calc(100%-52px);
+    font-size: 1.25rem;
+    color: black;
+    outline: none;
+  }
+  .searchBar_button {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    border-color: azure;
+    margin-right: 7px;
+    color: $black-color;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .search-gif {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  .product {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; /* Gap between items */
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .searchBar {
+    padding: 0.5rem 0.5rem 1.5rem;
+    // flex-grow: 1;
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+  }
+  .searchBar_form {
+    display: flex;
+    min-width: 85vw;
+    max-width: 70vw;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    border: 2px solid $black-color;
+    border-radius: 500px;
+    height: 40px;
+    input {
+      font-size: 1.25rem;
+      color: $black-color;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+  }
+  .searchBar_text {
+    flex-grow: 1;
+    border: none;
+    margin-right: 0.25rem;
+    background-color: transparent;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    // width: calc(100%-52px);
+    font-size: 1.25rem;
+    color: black;
+    outline: none;
+  }
+  .searchBar_button {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    border-color: azure;
+    margin-right: 7px;
+    color: $black-color;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .search-gif {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  .product {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 30px; /* Gap between items */
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .searchBar {
+    padding: 0.5rem 0.5rem 1.5rem;
+    // flex-grow: 1;
+    display: flex;
+    align-content: center;
+
+    justify-content: center;
+  }
+  .searchBar_form {
+    display: flex;
+    min-width: 85vw;
+    max-width: 70vw;
+    margin: 0 auto;
+
+    justify-content: space-between;
+    border: 2px solid $black-color;
+    border-radius: 500px;
+    height: 40px;
+    input {
+      font-size: 1.25rem;
+      color: $black-color;
+      font-family: Montserrat;
+      font-weight: bold;
+    }
+  }
+  .searchBar_text {
+    flex-grow: 1;
+    border: none;
+    margin-right: 0.25rem;
+    background-color: transparent;
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    // width: calc(100%-52px);
+    font-size: 1.25rem;
+    color: black;
+    outline: none;
+  }
+  .searchBar_button {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: transparent;
+    border-color: azure;
+    margin-right: 7px;
+    color: $black-color;
+    font-size: 1.1rem;
+    font-weight: 900;
+  }
+  .search-gif {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  .product {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr); /* Creates three equal columns */
+    gap: 30px; /* Gap between items */
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: Wimpykid;
+    src: url(../DiaryOfAWimpyKidFontRegular.ttf);
+  }
+  
+
+@mixin btn($blue-color:#19D3DA){
+    width: 124px;
+    height: 48px;
+    font-family:Wimpykid;
+    font-size: 20px;
+    background-color:$blue-color ;
+    border-radius: 24px;
+    padding: 2px;
+    margin-right: 2px;
+}

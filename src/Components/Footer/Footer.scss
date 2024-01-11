@@ -1,0 +1,81 @@
+@import "../Variable";
+@import "../Mixins";
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../../Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Wimpykid;
+  src: url(../../DiaryOfAWimpyKidFontRegular.ttf);
+}
+
+.footer {
+  padding: 40px;
+  font-family: Montserrat;
+
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+  }
+  // flex-direction: column;
+
+  .footer-get {
+    padding-bottom: 30px;
+    width: 300px;
+    h1 {
+      color: $blue-color;
+      font-family: Wimpykid;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+    .privacy {
+      padding-top: 20px;
+    }
+  }
+  .footer-use {
+    gap: 10px;
+    padding-bottom: 30px;
+
+    p {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+
+    h5 {
+    }
+    .social {
+      color: $black-color;
+      text-decoration: none;
+      display: flex;
+
+      .linke {
+        text-decoration: none;
+        color: $black-color;
+        font-weight: bold;
+        transition: color 0.3s;
+        padding-left: 20px;
+      }
+
+      img {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 50px;
+  }
+}

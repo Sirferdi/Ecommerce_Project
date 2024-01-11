@@ -1,0 +1,28 @@
+@import "../../Components/Variable";
+@import "../../Components/Mixins";
+.layout {
+  background-color: blue;
+}
+.product-cart {
+  width: 50px;
+  height: 50px;
+  color: $White-color;
+  background-color: $black-color;
+  border-radius: 50%;
+  position: fixed;
+  top: 82%;
+  right: 5%;
+  span {
+    background-color: $blue-color;
+    color: $black-color;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Wimpykid;
+    position: absolute;
+    top: -20%;
+    right: 0;
+  }
+}

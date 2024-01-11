@@ -1,0 +1,418 @@
+@import "../Variable";
+@import "../Mixins";
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../../Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Wimpykid;
+  src: url(../../DiaryOfAWimpyKidFontRegular.ttf);
+}
+
+.Cart-Section {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  padding: 20px;
+  font-family: Montserrat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* semi-transparent black */
+  z-index: 90;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+
+  .Card-Container {
+    background-color: $White-color;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 55px 10px;
+    overflow-y: scroll;
+
+    color: #707581;
+    z-index: 90;
+    margin: 0 auto;
+    border-radius: 30px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .close {
+      font-size: 30px;
+      text-align: right;
+      padding-left: 20px;
+    }
+    .Cart-Header {
+      text-align: center;
+      font-size: $Font-h1;
+      font-weight: bold;
+      font-family: Wimpykid;
+    }
+
+    .Cart-Total {
+      text-align: center;
+      font-size: $Font-h2;
+      color: $blue-color;
+      font-weight: bold;
+      font-family: Wimpykid;
+    }
+    //   width: 100vw;
+    .Cart-Card {
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      width: 100%;
+      min-height: 128px;
+      padding-bottom: 20px;
+      align-items: center;
+
+      .Cart-Image {
+        width: 40%;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .Cart-Details {
+        width: 50%;
+        font-size: $Font-h4;
+        .Cart-Name {
+          display: flex;
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
+        .Cart-Cate {
+          display: flex;
+          margin-bottom: 15px;
+        }
+
+        .Cart-Amount {
+          display: flex;
+          margin-bottom: 20px;
+          justify-content: space-between;
+
+          .Cart-Control {
+            display: flex;
+            flex-direction: row;
+            button {
+              font-size: $Font-h4;
+              text-align: center;
+              width: 20px;
+              height: 20px;
+
+              border-radius: 50%;
+              display: flex;
+              // flex-direction: ;
+              justify-content: center;
+              align-items: center;
+
+              color: $White-color;
+              background-color: $black-color;
+            }
+          }
+          .Cart-quantity {
+            margin-left: 10px;
+            margin-right: 10px;
+
+            font-weight: bold;
+          }
+
+          .Cart-Price {
+            display: flex;
+            font-family: Wimpykid;
+            color: $blue-color;
+          }
+          .Cart-delete {
+            .delete {
+              // padding-left: 30px;
+              color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .Cart-Section {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    padding: 20px;
+    font-family: Montserrat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 90;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+    .Card-Container {
+      background-color: $White-color;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding: 55px 10px;
+      overflow-y: scroll;
+
+      color: #707581;
+      z-index: 90;
+      margin: 0 auto;
+      border-radius: 30px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .close {
+        font-size: 30px;
+        text-align: right;
+        padding-left: 20px;
+      }
+      .Cart-Header {
+        text-align: center;
+        font-size: $Font-h1;
+        font-weight: bold;
+        font-family: Wimpykid;
+      }
+
+      .Cart-Total {
+        text-align: center;
+        font-size: $Font-h2;
+        color: $blue-color;
+        font-weight: bold;
+        font-family: Wimpykid;
+      }
+      //   width: 100vw;
+      .Cart-Card {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 128px;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .Cart-Image {
+          width: 40%;
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+        .Cart-Details {
+          width: 50%;
+          .Cart-Name {
+            display: flex;
+            margin-bottom: 10px;
+            width: 100%;
+          }
+
+          .Cart-Cate {
+            display: flex;
+            margin-bottom: 15px;
+          }
+
+          .Cart-Amount {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+
+            .Cart-Control {
+              display: flex;
+              flex-direction: row;
+              button {
+                font-size: $Font-h4;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+
+                border-radius: 50%;
+                display: flex;
+                // flex-direction: ;
+                justify-content: center;
+                align-items: center;
+
+                color: $White-color;
+                background-color: $black-color;
+              }
+            }
+            .Cart-quantity {
+              margin-left: 10px;
+              margin-right: 10px;
+
+              font-weight: bold;
+            }
+
+            .Cart-Price {
+              display: flex;
+              font-family: Wimpykid;
+              color: $blue-color;
+            }
+            .Cart-delete {
+              .delete {
+                // padding-left: 30px;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .Cart-Section {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    padding: 20px;
+    font-family: Montserrat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black */
+    z-index: 90;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+    .Card-Container {
+      background-color: $White-color;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding: 55px 10px;
+      overflow-y: scroll;
+
+      color: #707581;
+      z-index: 90;
+      margin: 0 auto;
+      border-radius: 30px;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .close {
+        font-size: 30px;
+        text-align: right;
+        padding-left: 20px;
+      }
+      .Cart-Header {
+        text-align: center;
+        font-size: $Font-h1;
+        font-weight: bold;
+        font-family: Wimpykid;
+      }
+
+      .Cart-Total {
+        text-align: center;
+        font-size: $Font-h2;
+        color: $blue-color;
+        font-weight: bold;
+        font-family: Wimpykid;
+      }
+      //   width: 100vw;
+      .Cart-Card {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 128px;
+        align-items: center;
+        padding-bottom: 20px;
+
+        .Cart-Image {
+          width: 40%;
+          img {
+            width: 250px;
+            height: 250px;
+          }
+        }
+        .Cart-Details {
+          width: 50%;
+          font-size: $Font-h3;
+          .Cart-Name {
+            display: flex;
+            margin-bottom: 10px;
+            width: 100%;
+          }
+
+          .Cart-Cate {
+            display: flex;
+            margin-bottom: 15px;
+          }
+
+          .Cart-Amount {
+            display: flex;
+            margin-bottom: 20px;
+            justify-content: space-between;
+
+            .Cart-Control {
+              display: flex;
+              flex-direction: row;
+              button {
+                font-size: $Font-h4;
+                text-align: center;
+                width: 20px;
+                height: 20px;
+
+                border-radius: 50%;
+                display: flex;
+                // flex-direction: ;
+                justify-content: center;
+                align-items: center;
+
+                color: $White-color;
+                background-color: $black-color;
+              }
+            }
+            .Cart-quantity {
+              margin-left: 10px;
+              margin-right: 10px;
+
+              font-weight: bold;
+            }
+
+            .Cart-Price {
+              display: flex;
+              font-family: Wimpykid;
+              color: $blue-color;
+            }
+            .Cart-delete {
+              .delete {
+                // padding-left: 30px;
+                color: red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// font-size: $Font-h3;
+
+@media screen and (min-width: 1024px) {
+}
